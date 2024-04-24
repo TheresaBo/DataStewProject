@@ -1,12 +1,20 @@
-import pandas as pd;
+import pandas as pd
+import gzip
+import shutil
 
 
 # we need data from 2010 - 2021
 
 # ELECTRIC CAR + HYBRID CAR + PASSENGER_CAR
-CO2_FOOTPRINT = "input/estat_env_ac_co2fp.tsv"
+CO2_FOOTPRINT_GZ = "input/estat_env_ac_co2fp.tsv.gz"
 # BYCYCLE VS. CAR (in %)
 VERKEHRSMITTELWAHL = "input/verkehrsmittelwahl2021.csv"
+
+with gzip.open('input/estat_env_ac_co2fp.tsv.gz', 'rb') as f_in:
+    with open('input/unzip_estat_env_ac_co2fp.tsv', 'wb') as f_out:
+        shutil.copyfileobj(f_in, f_out)
+
+CO2_FOOTPRINT = "input/unzip_estat_env_ac_co2fp.tsv"
 
 co2_footprint_data = pd.read_csv(CO2_FOOTPRINT,'\t')
 # co2 emissions in households in austria in thousand tonnes of CO2 emissions
