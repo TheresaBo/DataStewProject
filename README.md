@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/791220263.svg)](https://zenodo.org/doi/10.5281/zenodo.11068517)
 This README serves as a quick start guide and describes the fields and values of the input files as well as the produced output csv files. The descriptions have been adapted from the respective resources.
 
 # Run the project
