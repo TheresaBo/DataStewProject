@@ -1,7 +1,9 @@
 This README serves as a quick start guide and describes the fields and values of the input files as well as the produced output csv files. The descriptions have been adapted from the respective resources.
 
 # Run the project
-
+To run the project locally, the libray Pandas has to be installed via pip install.
+The program ```filter.py``` unzips, transforms and extracts the data necessary for the analysis.
+```visualise.py``` produces the respective plots displaying the analysis results.
 
 # Data Description
 ## Input
