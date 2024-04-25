@@ -2,10 +2,12 @@ This README serves as a quick start guide and describes the fields and values of
 
 # Run the project
 
+
 # Data Description
 ## Input
 
 ### verkehrsmittelwahl2021.csv
+
 - NUTS1: AT1 for Eastern Austria  
 - NUTS2: AT13 for Federal State Vienna
 - NUTS3: AT130 for City of Vienna
@@ -43,3 +45,15 @@ This README serves as a quick start guide and describes the fields and values of
 - BY_FOOT: Share of pedestrians
 - OTHER: Share of rest of means of transports
 - EMISSION: thousand tonnes of CO2 emissions in Austrian households
+
+### transport_emission.png
+Stacked bar chart
+- x-Axis: Years from 2010 to 2021
+- y-Axis left: percentage of means of transport used
+- y-Axis right: Co2 emissions in thousands of tons
+
+### correlation.png
+Scatter plot
+- x-Axis: Bicycle usage
+  in correlation to
+- y-Axis: emissions
